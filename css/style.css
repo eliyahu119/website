@@ -272,6 +272,7 @@ section {
     opacity: 0;
     animation: fadeInUp 1s forwards;
     animation-delay: 0.3s;
+    text-align: center; /* Added to ensure proper centering */
 }
 
 .hero .lead {
@@ -334,7 +335,8 @@ section {
     height: 250px;
     display: flex;
     justify-content: center;
-
+    align-items: center;
+    margin-top: 10px; /* Added to better align with text */
 }
 
 .about-image img {
@@ -350,6 +352,7 @@ section {
 
 .about-text {
     flex: 1;
+    padding-top: 10px; /* Added to align better with image */
 }
 
 .about-text p {
@@ -418,6 +421,7 @@ section {
     overflow: hidden;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     transition: var(--transition);
+    height: 100%; /* Ensure consistent height */
 }
 
 .project-card:hover {
@@ -435,6 +439,7 @@ section {
     height: 100%;
     object-fit: cover;
     transition: var(--transition);
+    background-color: #eaeaea; /* Light background for placeholder images */
 }
 
 .project-card:hover .project-image img {
