@@ -322,17 +322,18 @@ section {
 /* About Section */
 .about-content {
     display: flex;
-    align-items: center;
-    gap: 50px;
-}
-
-.about-image {
-    flex: 1;
+    align-items: center; /* Vertically aligns the image and text */
+    gap: 30px; /* Reduced gap for closer proximity */
 }
 
 .about-image img {
-    border-radius: 10px;
+    border-radius: 50%;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    display: block; 
+    object-position: center 60%; /* Adjusts the image focus to be a bit lower */
 }
 
 .about-text {
