@@ -531,12 +531,15 @@ section {
 
 .contact-content {
     display: flex;
-    gap: 50px;
+    gap: 30px;
 }
 
-.contact-info,
-.contact-form {
-    flex: 1;
+.contact-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+    width: 100%;
 }
 
 .contact-item {
@@ -544,12 +547,12 @@ section {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    margin-bottom: 30px;
     padding: 20px;
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     transition: var(--transition);
+    flex: 1;
 }
 
 .contact-item:hover {
@@ -567,26 +570,11 @@ section {
     margin-bottom: 10px;
 }
 
-.form-group {
-    margin-bottom: 20px;
-}
-
-.form-group input,
-.form-group textarea {
-    width: 100%;
-    padding: 12px 15px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    outline: none;
-    font-family: inherit;
-    font-size: 1rem;
-    transition: var(--transition);
-}
-
-.form-group input:focus,
-.form-group textarea:focus {
-    border-color: var(--primary-color);
-    box-shadow: 0 0 0 2px rgba(92, 107, 192, 0.2);
+/* Responsive adjustments for contact section */
+@media (max-width: 768px) {
+    .contact-info {
+        flex-direction: column;
+    }
 }
 
 /* Footer */
