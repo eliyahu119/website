@@ -336,7 +336,6 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 10px; /* Added to better align with text */
 }
 
 .about-image img {
@@ -352,7 +351,6 @@ section {
 
 .about-text {
     flex: 1;
-    padding-top: 10px; /* Added to align better with image */
 }
 
 .about-text p {
@@ -635,6 +633,7 @@ section {
     
     .about-text {
         padding-top: 0;
+        text-align: left;
     }
     
     .skills-content,
